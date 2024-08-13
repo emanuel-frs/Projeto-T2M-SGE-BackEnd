@@ -1,6 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using Domain.ValueObject;
 
 namespace Domain.Entities
 {
@@ -13,7 +12,8 @@ namespace Domain.Entities
 
         [Required(ErrorMessage = "Nome é obrigatório")]
         [Column("nome")]
-        public string Name { get; set; }
+        public string Nome { get; set; }
+
 
         [Required(ErrorMessage = "Data é obrigatória")]
         [Column("data")]
@@ -27,21 +27,20 @@ namespace Domain.Entities
         [Column("capacidade")]
         public int Capacidade { get; set; }
 
-        [ForeignKey("Local")]
-        public int LocalId { get; set; }
-
-        public Local Local { get; set; }
+        [ForeignKey("Endereco")]
+        [Column("enderecoId")]
+        public int EnderecoId { get; set; }
 
         public Evento(){ }
 
-        public Evento(int id, string nome, DateTime data, string descricao, int capacidade, int localId)
+        public Evento(int id, string nome, DateTime data, string descricao, int capacidade, int enderecoId)
         {
             EventoId =id;
-            Name =nome;
+            Nome =nome;
             Data =data;
             Descricao =descricao;
             Capacidade =capacidade;
-            LocalId =localId;
+            EnderecoId =enderecoId;
         }
     }
 }

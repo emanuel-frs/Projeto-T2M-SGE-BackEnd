@@ -53,10 +53,6 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.7.0, )"
-            },
-            "ViaCep": {
-              "target": "Package",
-              "version": "[4.1.511, )"
             }
           },
           "imports": [
@@ -71,9 +67,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

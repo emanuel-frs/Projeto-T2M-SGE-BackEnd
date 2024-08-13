@@ -1,0 +1,135 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1CCAEB-9385-4C40-B23D-8FBD57FBC9BC}|Test\\Test.csproj|c:\\users\\emanu\\downloads\\sge backend\\projeto-t2m-sge-backend\\webapplication1\\test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1CCAEB-9385-4C40-B23D-8FBD57FBC9BC}|Test\\Test.csproj|solutionrelative:test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B02480E-F3C1-4F04-97E6-6F93B94A23A0}|infra\\Infraestructore.csproj|c:\\users\\emanu\\downloads\\sge backend\\projeto-t2m-sge-backend\\webapplication1\\infra\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B02480E-F3C1-4F04-97E6-6F93B94A23A0}|infra\\Infraestructore.csproj|solutionrelative:infra\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B02480E-F3C1-4F04-97E6-6F93B94A23A0}|infra\\Infraestructore.csproj|c:\\users\\emanu\\downloads\\sge backend\\projeto-t2m-sge-backend\\webapplication1\\infra\\repositories\\eventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B02480E-F3C1-4F04-97E6-6F93B94A23A0}|infra\\Infraestructore.csproj|solutionrelative:infra\\repositories\\eventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B02480E-F3C1-4F04-97E6-6F93B94A23A0}|infra\\Infraestructore.csproj|c:\\users\\emanu\\downloads\\sge backend\\projeto-t2m-sge-backend\\webapplication1\\infra\\repositories\\artistaeventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B02480E-F3C1-4F04-97E6-6F93B94A23A0}|infra\\Infraestructore.csproj|solutionrelative:infra\\repositories\\artistaeventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B02480E-F3C1-4F04-97E6-6F93B94A23A0}|infra\\Infraestructore.csproj|c:\\users\\emanu\\downloads\\sge backend\\projeto-t2m-sge-backend\\webapplication1\\infra\\repositories\\artistarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B02480E-F3C1-4F04-97E6-6F93B94A23A0}|infra\\Infraestructore.csproj|solutionrelative:infra\\repositories\\artistarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B02480E-F3C1-4F04-97E6-6F93B94A23A0}|infra\\Infraestructore.csproj|c:\\users\\emanu\\downloads\\sge backend\\projeto-t2m-sge-backend\\webapplication1\\infra\\repositories\\enderecorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B02480E-F3C1-4F04-97E6-6F93B94A23A0}|infra\\Infraestructore.csproj|solutionrelative:infra\\repositories\\enderecorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 371,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\Test\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "Test\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\Test\\UnitTest1.cs",
+              "RelativeToolTip": "Test\\UnitTest1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T14:47:56.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\infra\\Repositories\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "infra\\Repositories\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\infra\\Repositories\\UsuarioRepository.cs",
+              "RelativeToolTip": "infra\\Repositories\\UsuarioRepository.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAIwEwAAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T14:18:38.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EventoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\infra\\Repositories\\EventoRepository.cs",
+              "RelativeDocumentMoniker": "infra\\Repositories\\EventoRepository.cs",
+              "ToolTip": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\infra\\Repositories\\EventoRepository.cs",
+              "RelativeToolTip": "infra\\Repositories\\EventoRepository.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAIwEwAAACdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T14:16:45.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ArtistaEventoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\infra\\Repositories\\ArtistaEventoRepository.cs",
+              "RelativeDocumentMoniker": "infra\\Repositories\\ArtistaEventoRepository.cs",
+              "ToolTip": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\infra\\Repositories\\ArtistaEventoRepository.cs",
+              "RelativeToolTip": "infra\\Repositories\\ArtistaEventoRepository.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAIwEwAAACHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T14:14:34.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ArtistaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\infra\\Repositories\\ArtistaRepository.cs",
+              "RelativeDocumentMoniker": "infra\\Repositories\\ArtistaRepository.cs",
+              "ToolTip": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\infra\\Repositories\\ArtistaRepository.cs",
+              "RelativeToolTip": "infra\\Repositories\\ArtistaRepository.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAIwEwAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T14:08:16.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EnderecoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\infra\\Repositories\\EnderecoRepository.cs",
+              "RelativeDocumentMoniker": "infra\\Repositories\\EnderecoRepository.cs",
+              "ToolTip": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\infra\\Repositories\\EnderecoRepository.cs",
+              "RelativeToolTip": "infra\\Repositories\\EnderecoRepository.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAIwEwAAACyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T14:07:52.852Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 29,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
