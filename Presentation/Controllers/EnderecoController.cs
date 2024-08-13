@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using Application.Services;
+using Domain.Entities;
 using Domain.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,9 +9,9 @@ namespace Presentation.Controllers
     [Route("api/[controller]")]
     public class EnderecoController : ControllerBase
     {
-        private readonly EnderecoService _enderecoService;
+        private readonly IEnderecoService _enderecoService;
 
-        public EnderecoController(EnderecoService enderecoService)
+        public EnderecoController(IEnderecoService enderecoService)
         {
             _enderecoService = enderecoService;
         }

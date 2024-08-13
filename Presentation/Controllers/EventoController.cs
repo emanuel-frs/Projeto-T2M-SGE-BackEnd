@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using Application.Services;
+using Domain.Entities;
 using Domain.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,9 +9,9 @@ namespace Presentation.Controllers
     [Route("api/[controller]")]
     public class EventoController : ControllerBase
     {
-        private readonly EventoService _eventoService;
+        private readonly IEventoService _eventoService;
 
-        public EventoController(EventoService eventoService)
+        public EventoController(IEventoService eventoService)
         {
             _eventoService = eventoService;
         }

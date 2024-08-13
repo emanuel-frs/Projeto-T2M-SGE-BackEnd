@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using Application.Services;
+using Domain.Entities;
 using Domain.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,9 +9,9 @@ namespace Presentation.Controllers
     [Route("api/[controller]")]
     public class ArtistaEventoController : ControllerBase
     {
-        private readonly ArtistaEventoService _artistaEventoService;
+        private readonly IArtistaEventoService _artistaEventoService;
 
-        public ArtistaEventoController(ArtistaEventoService artistaEventoService)
+        public ArtistaEventoController(IArtistaEventoService artistaEventoService)
         {
             _artistaEventoService = artistaEventoService;
         }

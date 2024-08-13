@@ -4,14 +4,93 @@
     "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\Test\\Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\Test\\Test.csproj": {
+    "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\Test\\Test.csproj",
-        "projectName": "Test",
-        "projectPath": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\Test\\Test.csproj",
+        "projectUniqueName": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\emanu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\Test\\obj\\",
+        "outputPath": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\emanu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\emanu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,9 +129,265 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Presentation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Presentation.csproj",
+        "projectName": "Presentation",
+        "projectPath": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Presentation.csproj",
+        "packagesPath": "C:\\Users\\emanu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\emanu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Application\\Application.csproj"
+              },
+              "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\infra\\Infraestructore.csproj": {
+                "projectPath": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\infra\\Infraestructore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\infra\\Infraestructore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\infra\\Infraestructore.csproj",
+        "projectName": "Infraestructore",
+        "projectPath": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\infra\\Infraestructore.csproj",
+        "packagesPath": "C:\\Users\\emanu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\emanu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Application\\Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\Test\\Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\Test\\Test.csproj",
+        "projectName": "Test",
+        "projectPath": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\Test\\Test.csproj",
+        "packagesPath": "C:\\Users\\emanu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\emanu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Presentation.csproj": {
+                "projectPath": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Presentation.csproj"
+              },
+              "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\infra\\Infraestructore.csproj": {
+                "projectPath": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\infra\\Infraestructore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.10.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            },
+            "System.Threading.Tasks": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
