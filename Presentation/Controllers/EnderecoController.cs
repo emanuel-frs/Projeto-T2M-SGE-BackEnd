@@ -2,11 +2,13 @@
 using Domain.Entities;
 using Domain.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Presentation.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("endereco")]
     public class EnderecoController : ControllerBase
     {
         private readonly IEnderecoService _enderecoService;
@@ -19,8 +21,15 @@ namespace Presentation.Controllers
         [HttpPost]
         public async Task<ActionResult> Create([FromBody] Endereco endereco)
         {
-            endereco.EnderecoId = await _enderecoService.AddEnderecoAsync(endereco);
-            return CreatedAtAction(nameof(GetById), new { id = endereco.EnderecoId }, endereco);
+            var enderecoExistente = await _enderecoService.GetEnderecoByCepAndNumeroAsync(endereco.CEP, endereco.Numero);
+
+            if (enderecoExistente != null)
+            {
+                return Conflict("Endereço já existe.");
+            }
+
+            var enderecoId = await _enderecoService.AddEnderecoAsync(endereco);
+            return CreatedAtAction(nameof(GetById), new { id = enderecoId }, endereco);
         }
 
         [HttpGet("{id}")]

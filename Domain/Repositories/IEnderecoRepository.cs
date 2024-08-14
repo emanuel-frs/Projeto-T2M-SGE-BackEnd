@@ -9,5 +9,6 @@ namespace Domain.Repositories
         Task<IEnumerable<Endereco>> GetAllEnderecoAsync();
         Task UpdateEnderecoAsync(Endereco endereco);
         Task DeleteEnderecoAsync(int id);
+        Task<Endereco> GetEnderecoByCepAndNumeroAsync(string cep, int numero);
     }
 }

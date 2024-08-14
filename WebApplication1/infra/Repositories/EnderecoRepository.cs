@@ -32,6 +32,15 @@ namespace Infrastructore.Repositories
             }
         }
 
+        public async Task<Endereco> GetEnderecoByCepAndNumeroAsync(string cep, int numero)
+        {
+            using (var dbConnection = _postgresDbConnection.CreateConnection())
+            {
+                var sqlQuery = "SELECT * FROM Endereco WHERE cep = @Cep AND numero = @Numero";
+                return await dbConnection.QueryFirstOrDefaultAsync<Endereco>(sqlQuery, new { Cep = cep, Numero = numero });
+            }
+        }
+
         //GetById
         public async Task<Endereco> GetEnderecoByIdAsync(int id)
         {

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Presentation.Controllers;
 using Xunit;
+using Domain.Services;
 
 namespace PresentationTest.ControllerTest
 {
@@ -112,5 +113,43 @@ namespace PresentationTest.ControllerTest
             var retornoEnderecos = Assert.IsType<List<Endereco>>(okResult.Value);
             Assert.Equal(enderecos.Count, retornoEnderecos.Count);
         }
+
+        [Fact]
+        public async Task Create_DeveRetornarConflict_QuandoEnderecoJaExistir()
+        {
+            // Arrange
+            var endereco = new Endereco { CEP = "12345678", Numero = 100 };
+            _mockEnderecoService.Setup(service => service.GetEnderecoByCepAndNumeroAsync(endereco.CEP, endereco.Numero))
+                                .ReturnsAsync(endereco);
+
+            // Act
+            var result = await _controller.Create(endereco);
+
+            // Assert
+            var conflictResult = Assert.IsType<ConflictObjectResult>(result);
+            Assert.Equal("Endereço já existe.", conflictResult.Value);
+        }
+
+        [Fact]
+        public async Task Create_DeveRetornarCreatedAtAction_QuandoEnderecoNaoExistirEForConfirmado()
+        {
+            // Arrange
+            var endereco = new Endereco { EnderecoId = 1, CEP = "12345678", Numero = 100 };
+            _mockEnderecoService.Setup(service => service.GetEnderecoByCepAndNumeroAsync(endereco.CEP, endereco.Numero))
+                                .ReturnsAsync((Endereco)null); // Simula que o endereço não existe
+
+            _mockEnderecoService.Setup(service => service.AddEnderecoAsync(endereco))
+                                .ReturnsAsync(endereco.EnderecoId); // Retorna o ID gerado
+
+            // Act
+            var result = await _controller.Create(endereco);
+
+            // Assert
+            var createdResult = Assert.IsType<CreatedAtActionResult>(result);
+            Assert.Equal("GetById", createdResult.ActionName);
+            Assert.Equal(endereco.EnderecoId, createdResult.RouteValues["id"]);
+            Assert.Equal(endereco, createdResult.Value);
+        }
+
     }
 }

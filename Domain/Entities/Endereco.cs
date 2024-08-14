@@ -35,6 +35,7 @@ namespace Domain.Entities
 
         [Required(ErrorMessage = "CEP é obrigatório")]
         [Column("cep")]
+        [RegularExpression(@"^\d{5}-\d{3}$")]
         public string CEP { get; set; }
 
         public Endereco() { }
