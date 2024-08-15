@@ -80,3 +80,4 @@ C:\Users\emanu\Downloads\SGE BACKEND\Projeto-T2M-SGE-BackEnd\Presentation\obj\De
 C:\Users\emanu\Downloads\SGE BACKEND\Projeto-T2M-SGE-BackEnd\Presentation\obj\Debug\net8.0\Presentation.pdb
 C:\Users\emanu\Downloads\SGE BACKEND\Projeto-T2M-SGE-BackEnd\Presentation\obj\Debug\net8.0\Presentation.genruntimeconfig.cache
 C:\Users\emanu\Downloads\SGE BACKEND\Projeto-T2M-SGE-BackEnd\Presentation\obj\Debug\net8.0\ref\Presentation.dll
+C:\Users\emanu\Downloads\SGE BACKEND\Projeto-T2M-SGE-BackEnd\Presentation\bin\Debug\net8.0\Newtonsoft.Json.dll

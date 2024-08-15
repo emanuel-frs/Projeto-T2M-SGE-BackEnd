@@ -14,7 +14,6 @@ namespace Domain.Entities
         [Column("nome")]
         public string Nome { get; set; }
 
-
         [Required(ErrorMessage = "Data é obrigatória")]
         [Column("data")]
         public DateTime Data { get; set; }

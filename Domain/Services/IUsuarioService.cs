@@ -11,5 +11,7 @@ namespace Domain.Services
         Task<IEnumerable<Usuario>> GetAllUsuarioAsync();
         Task UpdateUsuarioAsync(Usuario usuario);
         Task DeleteUsuarioAsync(int id);
+        Task<Usuario> LoginAsync(string email, string senha);
+        string HashSenha(string senha);
     }
 }

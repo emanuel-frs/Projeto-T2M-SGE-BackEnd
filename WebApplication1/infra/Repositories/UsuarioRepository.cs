@@ -2,6 +2,7 @@
 using Domain.Entities;
 using Domain.Repositories;
 using Infrastructure.ConexaoDB;
+using System.Threading.Tasks;
 
 namespace Infrastructore.Repositories
 {
@@ -14,15 +15,13 @@ namespace Infrastructore.Repositories
             _postgresDbConnection = postgresDbConnection;
         }
 
-        //LEMBRE DE MUDAR O CÓDIGO PARA FUNCIONAR
-        //Create
         public async Task<int> AddUsuarioAsync(Usuario usuario)
         {
             try
             {
                 using (var dbConnection = _postgresDbConnection.CreateConnection())
                 {
-                    var sqlQuery = "INSERT INTO Usuario (nome, email, senha) VALUES (@Nome, @Email, @Senha)";
+                    var sqlQuery = "INSERT INTO Usuario (nome, email, senha) VALUES (@Nome, @Email, @Senha) RETURNING usuarioId";
                     return await dbConnection.ExecuteScalarAsync<int>(sqlQuery, usuario);
                 }
             }
@@ -32,7 +31,6 @@ namespace Infrastructore.Repositories
             }
         }
 
-        //GetById
         public async Task<Usuario> GetUsuarioByIdAsync(int id)
         {
             try
@@ -49,7 +47,6 @@ namespace Infrastructore.Repositories
             }
         }
 
-        //GetAll
         public async Task<IEnumerable<Usuario>> GetAllUsuarioAsync()
         {
             try
@@ -66,8 +63,6 @@ namespace Infrastructore.Repositories
             }
         }
 
-        //LEMBRE DE MUDAR O CÓDIGO PARA FUNCIONAR
-        //Update
         public async Task UpdateUsuarioAsync(Usuario usuario)
         {
             try
@@ -84,7 +79,6 @@ namespace Infrastructore.Repositories
             }
         }
 
-        //Delete
         public async Task DeleteUsuarioAsync(int id)
         {
             try
@@ -93,6 +87,22 @@ namespace Infrastructore.Repositories
                 {
                     var sqlQuery = "DELETE FROM Usuario WHERE UsuarioId = @Id";
                     await dbConnection.ExecuteAsync(sqlQuery, new { Id = id });
+                }
+            }
+            catch (Exception error)
+            {
+                throw new ApplicationException("Um erro aconteceu durante a query SQL: " + error);
+            }
+        }
+
+        public async Task<Usuario> GetByEmailAsync(string email)
+        {
+            try
+            {
+                using (var dbConnection = _postgresDbConnection.CreateConnection())
+                {
+                    var sqlQuery = "SELECT * FROM Usuario WHERE email = @Email";
+                    return await dbConnection.QueryFirstOrDefaultAsync<Usuario>(sqlQuery, new { Email = email });
                 }
             }
             catch (Exception error)

@@ -4,44 +4,38 @@ using Domain.Services;
 using Infraestructore.Repositories;
 using Infrastructore.Repositories;
 using Infrastructure.ConexaoDB;
-using Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Add CORS policy
+builder.Services.AddSingleton<PostgresDbConnection>();
+
+// Configuração do CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowFrontend",
-        builder =>
+    options.AddPolicy("AllowSpecificOrigin",
+        policy =>
         {
-            builder.WithOrigins("http://localhost:5173") // URL do front-end
-                   .AllowAnyMethod()
-                   .AllowAnyHeader();
+            policy.WithOrigins("http://localhost:5173")
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
         });
 });
 
-builder.Services.AddSingleton<PostgresDbConnection>();
-
-builder.Services.AddHttpClient<ViaCepService>();
-builder.Services.AddScoped<IViaCepService, ViaCepService>();
-
-// Registra repositorios
+// Registra repositorios e services
 builder.Services.AddScoped<IArtistaRepository, ArtistaRepository>();
 builder.Services.AddScoped<IArtistaEventoRepository, ArtistaEventoRepository>();
 builder.Services.AddScoped<IEventoRepository, EventoRepository>();
 builder.Services.AddScoped<IEnderecoRepository, EnderecoRepository>();
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 
-// Registra services
 builder.Services.AddScoped<ArtistaService>();
 builder.Services.AddScoped<ArtistaEventoService>();
-builder.Services.AddScoped<EventoService>();
+builder.Services.AddScoped<IEventoService, EventoService>();
 builder.Services.AddScoped<IEnderecoService, EnderecoService>();
 builder.Services.AddScoped<UsuarioService>();
 
@@ -54,10 +48,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// Use CORS
-app.UseCors("AllowFrontend");
-
 app.UseHttpsRedirection();
+
+// Adiciona o middleware CORS
+app.UseCors("AllowSpecificOrigin");
 
 app.UseAuthorization();
 

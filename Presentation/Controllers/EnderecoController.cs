@@ -21,15 +21,8 @@ namespace Presentation.Controllers
         [HttpPost]
         public async Task<ActionResult> Create([FromBody] Endereco endereco)
         {
-            var enderecoExistente = await _enderecoService.GetEnderecoByCepAndNumeroAsync(endereco.CEP, endereco.Numero);
-
-            if (enderecoExistente != null)
-            {
-                return Conflict("Endereço já existe.");
-            }
-
-            var enderecoId = await _enderecoService.AddEnderecoAsync(endereco);
-            return CreatedAtAction(nameof(GetById), new { id = enderecoId }, endereco);
+            await _enderecoService.AddEnderecoAsync(endereco);
+            return CreatedAtAction(nameof(GetById), new { id = endereco.EnderecoId }, endereco);
         }
 
         [HttpGet("{id}")]

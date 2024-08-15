@@ -2,6 +2,8 @@
 using Domain.Entities;
 using Domain.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace Presentation.Controllers
 {
@@ -19,8 +21,8 @@ namespace Presentation.Controllers
         [HttpPost]
         public async Task<ActionResult> Create([FromBody] Usuario usuario)
         {
-            await _usuarioService.AddUsuarioAsync(usuario);
-            return CreatedAtAction(nameof(GetById), new { id = usuario.UsuarioId }, usuario);
+            var usuarioId = await _usuarioService.AddUsuarioAsync(usuario);
+            return CreatedAtAction(nameof(GetById), new { id = usuarioId }, usuario);
         }
 
         [HttpGet("{id}")]
@@ -42,6 +44,7 @@ namespace Presentation.Controllers
         public async Task<ActionResult> Update(int id, [FromBody] Usuario usuario)
         {
             if (id != usuario.UsuarioId) return BadRequest();
+
             await _usuarioService.UpdateUsuarioAsync(usuario);
             return Ok(usuario);
         }
@@ -52,5 +55,22 @@ namespace Presentation.Controllers
             await _usuarioService.DeleteUsuarioAsync(id);
             return NoContent();
         }
+
+        [HttpPost("login")]
+        public async Task<ActionResult<Usuario>> Login([FromBody] LoginRequest loginRequest)
+        {
+            var usuario = await _usuarioService.LoginAsync(loginRequest.Email, loginRequest.Senha);
+            if (usuario == null)
+            {
+                return Unauthorized(new { message = "Credenciais inválidas" });
+            }
+            return Ok(usuario);
+        }
+    }
+
+    public class LoginRequest
+    {
+        public string Email { get; set; }
+        public string Senha { get; set; }
     }
 }

@@ -3,13 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{38DBDC8B-8982-445F-A069-A4F152C42A8C}|..\\Domain\\Domain.csproj|c:\\users\\emanu\\downloads\\sge backend\\projeto-t2m-sge-backend\\domain\\entities\\endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3491A75D-83B9-4A4C-924D-2FCC6D788180}|..\\Presentation\\Presentation.csproj|c:\\users\\emanu\\downloads\\sge backend\\projeto-t2m-sge-backend\\presentation\\controllers\\enderecocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A50DB0EB-7326-4D4A-ACAF-8C8674F8C5B2}|..\\Application\\Application.csproj|c:\\users\\emanu\\downloads\\sge backend\\projeto-t2m-sge-backend\\application\\services\\enderecoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3491A75D-83B9-4A4C-924D-2FCC6D788180}|..\\Presentation\\Presentation.csproj|c:\\users\\emanu\\downloads\\sge backend\\projeto-t2m-sge-backend\\presentation\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3491A75D-83B9-4A4C-924D-2FCC6D788180}|..\\Presentation\\Presentation.csproj|c:\\users\\emanu\\downloads\\sge backend\\projeto-t2m-sge-backend\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -18,10 +12,7 @@
       "AbsoluteMoniker": "D:0:0:{3491A75D-83B9-4A4C-924D-2FCC6D788180}|..\\Presentation\\Presentation.csproj|c:\\users\\emanu\\downloads\\sge backend\\projeto-t2m-sge-backend\\presentation\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3491A75D-83B9-4A4C-924D-2FCC6D788180}|..\\Presentation\\Presentation.csproj|c:\\users\\emanu\\downloads\\sge backend\\projeto-t2m-sge-backend\\presentation\\presentation.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3491A75D-83B9-4A4C-924D-2FCC6D788180}|..\\Presentation\\Presentation.csproj|c:\\users\\emanu\\downloads\\sge backend\\projeto-t2m-sge-backend\\presentation\\presentation.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{A50DB0EB-7326-4D4A-ACAF-8C8674F8C5B2}|..\\Application\\Application.csproj|c:\\users\\emanu\\downloads\\sge backend\\projeto-t2m-sge-backend\\application\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +21,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 379,
-          "SelectedChildIndex": 3,
+          "DockedHeight": 381,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -44,107 +35,72 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 19,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Endereco.cs",
-              "DocumentMoniker": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Domain\\Entities\\Endereco.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Entities\\Endereco.cs",
-              "ToolTip": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Domain\\Entities\\Endereco.cs",
-              "RelativeToolTip": "..\\Domain\\Entities\\Endereco.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAowCUAAAAtAAAA",
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "..\\Presentation\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "..\\Presentation\\Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAA0wAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T17:52:19.68Z",
+              "WhenOpened": "2024-08-15T01:43:29.909Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EnderecoController.cs",
-              "DocumentMoniker": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Controllers\\EnderecoController.cs",
-              "RelativeDocumentMoniker": "..\\Presentation\\Controllers\\EnderecoController.cs",
-              "ToolTip": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Controllers\\EnderecoController.cs",
-              "RelativeToolTip": "..\\Presentation\\Controllers\\EnderecoController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T17:25:10.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EnderecoService.cs",
-              "DocumentMoniker": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Application\\Services\\EnderecoService.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Services\\EnderecoService.cs",
-              "ToolTip": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Application\\Services\\EnderecoService.cs",
-              "RelativeToolTip": "..\\Application\\Services\\EnderecoService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T16:16:18.083Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Program.cs",
               "RelativeDocumentMoniker": "..\\Presentation\\Program.cs",
               "ToolTip": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Program.cs",
               "RelativeToolTip": "..\\Presentation\\Program.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAACwAAAAtAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAcwBYAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T16:06:54.702Z",
+              "WhenOpened": "2024-08-15T01:40:41.723Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "..\\Presentation\\Properties\\launchSettings.json",
               "ToolTip": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Properties\\launchSettings.json",
               "RelativeToolTip": "..\\Presentation\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-14T15:44:27.248Z",
+              "WhenOpened": "2024-08-15T01:37:02.707Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Presentation.http",
-              "DocumentMoniker": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Presentation.http",
-              "RelativeDocumentMoniker": "..\\Presentation\\Presentation.http",
-              "ToolTip": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Presentation.http",
-              "RelativeToolTip": "..\\Presentation\\Presentation.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-08-14T15:44:23.259Z",
+              "DocumentIndex": 3,
+              "Title": "UsuarioDto.cs",
+              "DocumentMoniker": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Application\\DTOs\\UsuarioDto.cs",
+              "RelativeDocumentMoniker": "..\\Application\\DTOs\\UsuarioDto.cs",
+              "ToolTip": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Application\\DTOs\\UsuarioDto.cs",
+              "RelativeToolTip": "..\\Application\\DTOs\\UsuarioDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T01:18:28.96Z",
               "EditorCaption": ""
             },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Presentation.csproj.user",
-              "DocumentMoniker": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Presentation.csproj.user",
-              "RelativeDocumentMoniker": "..\\Presentation\\Presentation.csproj.user",
-              "ToolTip": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Presentation.csproj.user",
-              "RelativeToolTip": "..\\Presentation\\Presentation.csproj.user",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
-              "WhenOpened": "2024-08-14T15:44:21.596Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedHeight": 21,
-          "SelectedChildIndex": -1,
-          "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }
