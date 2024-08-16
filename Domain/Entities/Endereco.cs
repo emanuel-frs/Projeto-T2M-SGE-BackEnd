@@ -35,7 +35,7 @@ namespace Domain.Entities
 
         [Required(ErrorMessage = "CEP é obrigatório")]
         [Column("cep")]
-        [RegularExpression(@"^\d{5}-\d{3}$")]
+        [StringLength(8, ErrorMessage = "CEP deve ter exatamente 8 caracteres.")]
         public string CEP { get; set; }
 
         public Endereco() { }

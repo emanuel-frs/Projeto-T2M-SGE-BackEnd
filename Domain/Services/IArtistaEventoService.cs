@@ -1,4 +1,5 @@
 ﻿using Domain.Entities;
+using Domain.Projection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace Domain.Services
     {
         Task<int> AddArtistaEventoAsync(ArtistaEvento artistaEvento);
         Task<ArtistaEvento> GetArtistaEventoByIdAsync(int id);
-        Task<IEnumerable<ArtistaEvento>> GetAllArtistaEventoAsync();
+        Task<IEnumerable<IArtistaEventoProjection>> GetAllArtistaEventoAsync();
         Task UpdateArtistaEventoAsync(ArtistaEvento artistaEvento);
         Task DeleteArtistaEventoAsync(int id);
     }

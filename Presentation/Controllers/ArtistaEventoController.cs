@@ -1,6 +1,8 @@
-﻿using Application.Services;
+﻿using Application.DTOs;
+using Application.Services;
 using Domain.Entities;
 using Domain.Services;
+using Domain.Projection;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.Controllers
@@ -32,10 +34,10 @@ namespace Presentation.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ArtistaEvento>>> GetAll()
+        public async Task<ActionResult<IEnumerable<IArtistaEventoProjection>>> GetAll()
         {
-            var artistaEvento = await _artistaEventoService.GetAllArtistaEventoAsync();
-            return Ok(artistaEvento);
+            var artistaEventos = await _artistaEventoService.GetAllArtistaEventoAsync();
+            return Ok(artistaEventos);
         }
 
         [HttpPut("{id}")]

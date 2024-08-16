@@ -1,7 +1,10 @@
-﻿using Dapper;
+﻿using Application.DTOs;
+using Dapper;
 using Domain.Entities;
+using Domain.Projection;
 using Domain.Repositories;
 using Infrastructure.ConexaoDB;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Infraestructore.Repositories
 {
@@ -50,21 +53,37 @@ namespace Infraestructore.Repositories
         }
 
         //GetAll
-        public async Task<IEnumerable<ArtistaEvento>> GetAllArtistaEventoAsync()
+        public async Task<IEnumerable<IArtistaEventoProjection>> GetAllArtistaEventoAsync()
         {
             try
             {
                 using (var dbConnection = _postgresDbConnection.CreateConnection())
                 {
-                    var sqlQuery = "SELECT * FROM ArtistaEvento";
-                    return await dbConnection.QueryAsync<ArtistaEvento>(sqlQuery);
+                    var sqlQuery = @"
+                                    SELECT 
+                                        e.nome AS nomeEvento,
+                                        a.nome AS nomeArtista,
+                                        CONCAT(en.rua, ', ', en.numero, ', ', en.cep) AS endereco,
+                                        e.data AS dataEvento
+                                    FROM 
+                                        artistaevento ae
+                                    JOIN 
+                                        evento e ON ae.eventoid = e.eventoid
+                                    JOIN 
+                                        artista a ON ae.artistaid = a.artistaid
+                                    JOIN 
+                                        endereco en ON e.enderecoid = en.enderecoid;"
+                                        ;
+
+                    return await dbConnection.QueryAsync<ArtistaEventoDto>(sqlQuery);
                 }
             }
             catch (Exception error)
             {
-                throw new ApplicationException("Um erro aconteceu durante a query SQL: " + error);
+                throw new ApplicationException("Um erro aconteceu durante a query SQL: " + error.Message, error);
             }
         }
+
 
         //LEMBRE DE MUDAR O CÓDIGO PARA FUNCIONAR
         //Update

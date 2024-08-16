@@ -32,9 +32,8 @@ namespace Domain.Entities
 
         public Evento(){ }
 
-        public Evento(int id, string nome, DateTime data, string descricao, int capacidade, int enderecoId)
+        public Evento(string nome, DateTime data, string descricao, int capacidade, int enderecoId)
         {
-            EventoId =id;
             Nome =nome;
             Data =data;
             Descricao =descricao;

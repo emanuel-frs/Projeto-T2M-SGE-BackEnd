@@ -22,8 +22,13 @@ namespace Infrastructore.Repositories
             {
                 using (var dbConnection = _postgresDbConnection.CreateConnection())
                 {
-                    var sqlQuery = "INSERT INTO Evento (nome, data, descricao, capacidade, enderecoId) VALUES (@Nome, @Data, @Descricao, @Capacidade, @EnderecoId)";
-                    return await dbConnection.ExecuteScalarAsync<int>(sqlQuery, evento);
+                    var sqlQuery = @"
+                        INSERT INTO Evento (nome, data, descricao, capacidade, enderecoId)
+                        VALUES (@Nome, @Data, @Descricao, @Capacidade, @EnderecoId)
+                        RETURNING eventoId";
+
+                    evento.EventoId = await dbConnection.ExecuteScalarAsync<int>(sqlQuery, evento);
+                    return evento.EventoId;
                 }
             }
             catch (Exception error)

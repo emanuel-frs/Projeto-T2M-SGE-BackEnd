@@ -18,7 +18,12 @@ namespace Application.Services
             _eventoRepository = eventoRepository;
         }
 
-        public Task<int> AddEventoAsync(Evento evento) => _eventoRepository.AddEventoAsync(evento);
+        public async Task<int> AddEventoAsync(Evento evento)
+        {
+            var eventoId = await _eventoRepository.AddEventoAsync(evento);
+            evento.EventoId = eventoId; // Atribui o ID retornado à entidade
+            return eventoId;
+        }
         public Task<Evento> GetEventoByIdAsync(int id) => _eventoRepository.GetEventoByIdAsync(id);
         public Task<IEnumerable<Evento>> GetAllEventoAsync() => _eventoRepository.GetAllEventoAsync();
         public Task UpdateEventoAsync(Evento evento) => _eventoRepository.UpdateEventoAsync(evento);

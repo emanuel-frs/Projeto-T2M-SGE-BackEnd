@@ -1,4 +1,5 @@
 ﻿using Domain.Entities;
+using Domain.Projection;
 
 namespace Domain.Repositories
 {
@@ -6,7 +7,7 @@ namespace Domain.Repositories
     {
         Task<int> AddArtistaEventoAsync(ArtistaEvento artistaEvento);
         Task<ArtistaEvento> GetArtistaEventoByIdAsync(int id);
-        Task<IEnumerable<ArtistaEvento>> GetAllArtistaEventoAsync();
+        Task<IEnumerable<IArtistaEventoProjection>> GetAllArtistaEventoAsync();
         Task UpdateArtistaEventoAsync(ArtistaEvento artistaEvento);
         Task DeleteArtistaEventoAsync(int id);
     }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Presentation.Controllers
 {
     [ApiController]
-    [Route("endereco")]
+    [Route("api/[controller]")]
     public class EnderecoController : ControllerBase
     {
         private readonly IEnderecoService _enderecoService;

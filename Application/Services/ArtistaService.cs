@@ -1,9 +1,10 @@
 ﻿using Domain.Entities;
 using Domain.Repositories;
+using Domain.Services;
 
 namespace Application.Services
 {
-    public class ArtistaService
+    public class ArtistaService : IArtistaService
     {
         private readonly IArtistaRepository _artistaRepository;
 

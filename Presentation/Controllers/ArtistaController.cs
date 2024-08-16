@@ -19,6 +19,11 @@ namespace Presentation.Controllers
         [HttpPost]
         public async Task<ActionResult> Create([FromBody] Artista artista)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             await _artistaService.AddArtistaAsync(artista);
             return CreatedAtAction(nameof(GetById), new { id = artista.ArtistaId }, artista);
         }

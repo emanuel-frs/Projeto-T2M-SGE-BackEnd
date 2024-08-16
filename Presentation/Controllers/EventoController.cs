@@ -19,9 +19,10 @@ namespace Presentation.Controllers
         [HttpPost]
         public async Task<ActionResult> Create([FromBody] Evento evento)
         {
-            await _eventoService.AddEventoAsync(evento);
-            return CreatedAtAction(nameof(GetById), new { id = evento.EventoId }, evento);
+            var eventoId = await _eventoService.AddEventoAsync(evento);
+            return CreatedAtAction(nameof(GetById), new { id = eventoId }, evento);
         }
+
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Evento>> GetById(int id)

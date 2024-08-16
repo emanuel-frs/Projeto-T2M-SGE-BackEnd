@@ -33,11 +33,11 @@ builder.Services.AddScoped<IEventoRepository, EventoRepository>();
 builder.Services.AddScoped<IEnderecoRepository, EnderecoRepository>();
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 
-builder.Services.AddScoped<ArtistaService>();
-builder.Services.AddScoped<ArtistaEventoService>();
+builder.Services.AddScoped<IArtistaService, ArtistaService>();
+builder.Services.AddScoped<IArtistaEventoService, ArtistaEventoService>();
 builder.Services.AddScoped<IEventoService, EventoService>();
 builder.Services.AddScoped<IEnderecoService, EnderecoService>();
-builder.Services.AddScoped<UsuarioService>();
+builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 
 var app = builder.Build();
 

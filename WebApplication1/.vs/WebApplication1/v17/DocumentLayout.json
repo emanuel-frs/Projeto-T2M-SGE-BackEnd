@@ -3,16 +3,17 @@
   "WorkspaceRootPath": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3491A75D-83B9-4A4C-924D-2FCC6D788180}|..\\Presentation\\Presentation.csproj|c:\\users\\emanu\\downloads\\sge backend\\projeto-t2m-sge-backend\\presentation\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B02480E-F3C1-4F04-97E6-6F93B94A23A0}|infra\\Infraestructore.csproj|c:\\users\\emanu\\downloads\\sge backend\\projeto-t2m-sge-backend\\webapplication1\\infra\\repositories\\eventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B02480E-F3C1-4F04-97E6-6F93B94A23A0}|infra\\Infraestructore.csproj|solutionrelative:infra\\repositories\\eventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3491A75D-83B9-4A4C-924D-2FCC6D788180}|..\\Presentation\\Presentation.csproj|c:\\users\\emanu\\downloads\\sge backend\\projeto-t2m-sge-backend\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3491A75D-83B9-4A4C-924D-2FCC6D788180}|..\\Presentation\\Presentation.csproj|c:\\users\\emanu\\downloads\\sge backend\\projeto-t2m-sge-backend\\presentation\\controllers\\eventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3491A75D-83B9-4A4C-924D-2FCC6D788180}|..\\Presentation\\Presentation.csproj|c:\\users\\emanu\\downloads\\sge backend\\projeto-t2m-sge-backend\\presentation\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A50DB0EB-7326-4D4A-ACAF-8C8674F8C5B2}|..\\Application\\Application.csproj|c:\\users\\emanu\\downloads\\sge backend\\projeto-t2m-sge-backend\\application\\services\\eventoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A50DB0EB-7326-4D4A-ACAF-8C8674F8C5B2}|..\\Application\\Application.csproj|c:\\users\\emanu\\downloads\\sge backend\\projeto-t2m-sge-backend\\application\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38DBDC8B-8982-445F-A069-A4F152C42A8C}|..\\Domain\\Domain.csproj|c:\\users\\emanu\\downloads\\sge backend\\projeto-t2m-sge-backend\\domain\\repositories\\ieventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,8 +22,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 381,
-          "SelectedChildIndex": -1,
+          "DockedHeight": 267,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,72 +36,68 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            }
-          ]
-        },
-        {
-          "DockedHeight": 19,
-          "SelectedChildIndex": 1,
-          "Children": [
+            },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EventoService.cs",
+              "DocumentMoniker": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Application\\Services\\EventoService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Services\\EventoService.cs",
+              "ToolTip": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Application\\Services\\EventoService.cs",
+              "RelativeToolTip": "..\\Application\\Services\\EventoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T05:23:51.412Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "..\\Presentation\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "..\\Presentation\\Controllers\\UsuarioController.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAA0wAAAAAAAAAAA",
+              "Title": "EventoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\infra\\Repositories\\EventoRepository.cs",
+              "RelativeDocumentMoniker": "infra\\Repositories\\EventoRepository.cs",
+              "ToolTip": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\WebApplication1\\infra\\Repositories\\EventoRepository.cs",
+              "RelativeToolTip": "infra\\Repositories\\EventoRepository.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACcAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T01:43:29.909Z",
+              "WhenOpened": "2024-08-16T05:22:59.937Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Program.cs",
-              "RelativeDocumentMoniker": "..\\Presentation\\Program.cs",
-              "ToolTip": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Program.cs",
-              "RelativeToolTip": "..\\Presentation\\Program.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAcwBYAAAA3AAAA",
+              "Title": "EventoController.cs",
+              "DocumentMoniker": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Controllers\\EventoController.cs",
+              "RelativeDocumentMoniker": "..\\Presentation\\Controllers\\EventoController.cs",
+              "ToolTip": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Controllers\\EventoController.cs",
+              "RelativeToolTip": "..\\Presentation\\Controllers\\EventoController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAUwBgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T01:40:41.723Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "..\\Presentation\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Presentation\\Properties\\launchSettings.json",
-              "RelativeToolTip": "..\\Presentation\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-15T01:37:02.707Z",
+              "WhenOpened": "2024-08-16T05:10:17.354Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UsuarioDto.cs",
-              "DocumentMoniker": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Application\\DTOs\\UsuarioDto.cs",
-              "RelativeDocumentMoniker": "..\\Application\\DTOs\\UsuarioDto.cs",
-              "ToolTip": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Application\\DTOs\\UsuarioDto.cs",
-              "RelativeToolTip": "..\\Application\\DTOs\\UsuarioDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Title": "IEventoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Domain\\Repositories\\IEventoRepository.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Repositories\\IEventoRepository.cs",
+              "ToolTip": "C:\\Users\\emanu\\Downloads\\SGE BACKEND\\Projeto-T2M-SGE-BackEnd\\Domain\\Repositories\\IEventoRepository.cs",
+              "RelativeToolTip": "..\\Domain\\Repositories\\IEventoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T01:18:28.96Z",
+              "WhenOpened": "2024-08-16T05:10:06.439Z",
               "EditorCaption": ""
-            },
+            }
+          ]
+        },
+        {
+          "DockedHeight": 133,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

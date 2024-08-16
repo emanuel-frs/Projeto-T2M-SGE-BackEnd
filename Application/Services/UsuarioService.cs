@@ -53,18 +53,24 @@ namespace Application.Services
             return null;
         }
 
-        public string HashSenha(string senha)
+        public string HashSenha(string senha)  // Mudei de private para public
         {
-            using (var sha256 = SHA256.Create())
+            using (SHA256 sha256Hash = SHA256.Create())
             {
-                var hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(senha));
-                return BitConverter.ToString(hashedBytes).Replace("-", "").ToLower();
+                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(senha));
+                StringBuilder builder = new StringBuilder();
+                foreach (byte t in bytes)
+                {
+                    builder.Append(t.ToString("x2"));
+                }
+                return builder.ToString();
             }
         }
 
         private bool VerificarSenha(string senha, string hash)
         {
-            return HashSenha(senha) == hash;
+            string hashDaSenha = HashSenha(senha);
+            return hash == hashDaSenha;
         }
     }
 }
